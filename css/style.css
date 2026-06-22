@@ -257,13 +257,6 @@ body {
     animation: cursor-move-stay 6s steps(33, end) forwards, blink-block 1s step-end infinite;
 }
 
-@keyframes typing {
-    0% { width: 0; opacity: 1; }
-    45% { width: 100%; opacity: 1; }
-    75% { width: 100%; opacity: 1; }
-    76%, 100% { width: 0; opacity: 0; }
-}
-
 @keyframes typing-stay {
     0% { width: 0; opacity: 1; }
     45% { width: 100%; opacity: 1; }
@@ -274,13 +267,6 @@ body {
     0% { left: 0; }
     45% { left: 100%; }
     100% { left: 100%; }
-}
-
-@keyframes cursor-move {
-    0% { left: 0; }
-    45% { left: 100%; }
-    75% { left: 100%; }
-    76%, 100% { left: 0; }
 }
 
 @keyframes blink-block {
