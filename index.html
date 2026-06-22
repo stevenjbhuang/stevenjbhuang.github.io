@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junbo Huang</title>
+    <meta name="description" content="Junbo Huang — Personal Website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<canvas class="bg-canvas"></canvas>
+
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">Junbo Huang</a>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="#about" class="scramble" data-text="About">About</a>
+                <a href="#skills" class="scramble" data-text="Skills">Skills</a>
+                <a href="#projects" class="scramble" data-text="Projects">Projects</a>
+                <a href="#contact" class="scramble" data-text="Contact">Contact</a>
+                <a href="resume.html" class="nav-resume">Resume</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<section class="typing-banner">
+    <div class="container">
+        <p class="typing-line">
+            <span class="typing-clip">Hi there, welcome to my website!</span>
+            <span class="typing-cursor"></span>
+        </p>
+        <p class="easter-hint">(hint: press e three times...)</p>
+    </div>
+</section>
+
+<section class="hero" id="about">
+    <div class="container">
+   <div class="hero-inner">
+            <div class="hero-layout">
+                <div class="hero-content">
+   <h1>Junbo Huang</h1>
+                    <p class="hero-role">Software Engineer</p>
+                    <p class="hero-description">
+                        <!-- TODO: One or two lines about yourself -->
+                        I build software that solves real problems.
+                    </p>
+                    <p class="hero-description">
+                        <!-- TODO: Write your about section here -->
+                        Write a paragraph about your background, education, and what you're currently working on.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">View Projects</a>
+                        <a href="#contact" class="btn-secondary">Get in Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/stevenjbhuang" target="_blank" rel="noopener" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/stevenjbhuang" target="_blank" rel="noopener" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:your-email@example.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="assets/profile.jpg" alt="Junbo Huang" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="skills">
+    <div class="container">
+        <div class="section-header fade-in">
+            <p class="eyebrow">Skills</p>
+            <h2>What I work with</h2>
+        </div>
+        <div class="skills-list fade-in">
+            <!-- TODO: Customize your skills -->
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul>
+                    <li>JavaScript / TypeScript</li>
+                    <li>Python</li>
+                    <li>Go</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Infrastructure</h3>
+                <ul>
+                    <li>Docker</li>
+                    <li>AWS</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Linux</li>
+                    <li>CI/CD</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <div class="container">
+        <div class="section-header fade-in">
+            <p class="eyebrow">Projects</p>
+            <h2>Things I've built</h2>
+        </div>
+        <div class="projects-list fade-in">
+            <!-- TODO: Add your projects -->
+            <a href="#" class="project-item" target="_blank">
+                <div class="project-info">
+                    <h3 class="scramble" data-text="Project Name">Project Name</h3>
+                    <p>One-line description of what it does.</p>
+                </div>
+                <div class="project-meta">
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">Node</span>
+                    <i class="fas fa-arrow-up-right project-arrow"></i>
+                </div>
+            </a>
+            <a href="#" class="project-item" target="_blank">
+                <div class="project-info">
+                    <h3 class="scramble" data-text="Project Name">Project Name</h3>
+                    <p>One-line description of what it does.</p>
+                </div>
+                <div class="project-meta">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">FastAPI</span>
+                    <i class="fas fa-arrow-up-right project-arrow"></i>
+                </div>
+            </a>
+            <a href="#" class="project-item" target="_blank">
+                <div class="project-info">
+                    <h3 class="scramble" data-text="Project Name">Project Name</h3>
+                    <p>One-line description of what it does.</p>
+                </div>
+                <div class="project-meta">
+                    <span class="project-tag">Go</span>
+                    <span class="project-tag">Docker</span>
+                    <i class="fas fa-arrow-up-right project-arrow"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="container">
+        <div class="section-header fade-in">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's connect</h2>
+        </div>
+        <p class="contact-text fade-in">
+            I'm always open to new opportunities, collaborations, or just a good conversation.
+        </p>
+        <div class="contact-links fade-in">
+            <!-- TODO: Update with your info -->
+            <a href="mailto:your-email@example.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>your-email@example.com</span>
+            </a>
+            <a href="https://linkedin.com/in/stevenjbhuang" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/stevenjbhuang" target="_blank" class="contact-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junbo Huang — Resume</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+         .resume-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-top: 56px;
+        }
+
+            .resume-bar {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border-light);
+            background: var(--bg);
+            position: sticky;
+            top: 56px;
+            z-index: 10;
+        }
+
+        .resume-bar-inner {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .resume-bar a {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .resume-bar a:hover {
+            color: var(--text);
+        }
+
+        .resume-viewer {
+            flex: 1;
+            width: 100%;
+            min-height: calc(100vh - 128px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<canvas class="bg-canvas"></canvas>
+
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Junbo Huang</a>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="resume.html" class="nav-resume">Resume</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="resume-page">
+    <div class="resume-bar">
+        <div class="resume-bar-inner">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Back</a>
+            <a href="assets/resume.pdf" download><i class="fas fa-download"></i> Download</a>
+        </div>
+    </div>
+    <object data="assets/resume.pdf" type="application/pdf" class="resume-viewer">
+        <p>Your browser does not support PDF viewing. <a href="assets/resume.pdf">Click here to download</a>.</p>
+    </object>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
