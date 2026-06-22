@@ -282,13 +282,13 @@ function startMatrixRain(onComplete) {
     const chars = '01アイウエオカキクケコサシスセソタチツテト';
     const fontSize = 14;
     const columns = Math.floor(matrixCanvas.width / fontSize);
-      const drops = Array(columns).fill(0).map(() => -(Math.floor(Math.random() * (matrixCanvas.height / fontSize)) - 1));
+    const drops = Array(columns).fill(0).map(() => -(Math.floor(Math.random() * (matrixCanvas.height / fontSize)) - 1));
     const speeds = Array(columns).fill(0).map(() => Math.floor(Math.random() * 3) + 2);
     let fadeStarted = false;
     let opacity = 1;
     let frameCount = 0;
 
-     function draw() {
+    function draw() {
         if (fadeStarted) {
             opacity -= 0.03;
             if (opacity <= 0) {
