@@ -233,6 +233,7 @@ function toggleMatrixMode() {
         playMatrixSound(true);
         startMatrixRain(() => {
             deactivateMatrix();
+            updateBanner();
             matrixAnimating = false;
         });
     } else {
@@ -242,10 +243,27 @@ function toggleMatrixMode() {
         scrambleEnabled = true;
         playMatrixSound(false);
         startMatrixRain(() => {
+            updateBanner();
             matrixAnimating = false;
         });
     }
 }
+
+function updateBanner() {
+    const typingClip = document.querySelector('.typing-clip');
+    const typingCursor = document.querySelector('.typing-cursor');
+    if (!typingClip || !typingCursor) return;
+    const isMatrix = document.documentElement.classList.contains('matrix-mode');
+    typingClip.textContent = isMatrix ? 'ACCESS GRANTED, DECRYPTING ...' : 'Hi there, welcome to my website!';
+    const len = typingClip.textContent.length;
+    typingClip.style.animation = 'none';
+    typingCursor.style.animation = 'none';
+    void typingClip.offsetWidth;
+    typingClip.style.animation = `typing-stay 6s steps(${len}, end) forwards`;
+    typingCursor.style.animation = `cursor-move-stay 6s steps(${len}, end) forwards, blink-block 1s step-end infinite`;
+}
+
+updateBanner();
 
 function startMatrixRain(onComplete) {
     clearTimeout(matrixTimeout);
